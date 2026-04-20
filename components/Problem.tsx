@@ -8,7 +8,31 @@ export default function Problem() {
       title: "Addicted to smartphones or games?", 
       
       bgColor: "bg-red-0",
-    //   borderColor: "border-red-100",
+      borderColor: "border-red-100",
+      imageSrc: "/images/1.webp",
+      alt: "Child using phone addicted"
+    },
+    { 
+      title: "Less active and energetic than before?", 
+      
+      bgColor: "bg-red-0",
+      borderColor: "border-red-100",
+      imageSrc: "/images/1.webp",
+      alt: "Child using phone addicted"
+    },
+    { 
+      title: "Often bored and engaging in inappropriate activities?", 
+      
+      bgColor: "bg-red-0",
+      borderColor: "border-red-100",
+      imageSrc: "/images/1.webp",
+      alt: "Child using phone addicted"
+    },
+    { 
+      title: "Lack of focus on tasks?", 
+      
+      bgColor: "bg-red-0",
+      borderColor: "border-red-100",
       imageSrc: "/images/1.webp",
       alt: "Child using phone addicted"
     },
@@ -16,7 +40,7 @@ export default function Problem() {
   ];
 
   return (
-    <section id="problems" className="py-30 bg-slate-200 px-10">
+    <section id="problems" className="py-30 bg-slate-100 px-10">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4 text-slate-900 leading-tight">
