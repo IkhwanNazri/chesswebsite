@@ -4,6 +4,9 @@ import Benefits from '@/components/Benefits';
 import Problem from '@/components/Problem';
 import Pricing from '@/components/Pricing';
 import Navbar from '@/components/Navbar';
+import Special from '@/components/Special';
+import Location from '@/components/Location';
+import Registration from '@/components/Registration';
 
 export default function Home() {
   return (
@@ -12,7 +15,10 @@ export default function Home() {
       <Hero />
       <Problem/>
       <Benefits /> 
+      <Special/>
       <Pricing/>
+      <Location/>
+      <Registration/>
       <Footer/>
     </main>
   );

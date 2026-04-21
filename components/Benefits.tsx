@@ -1,39 +1,101 @@
 "use client";
-import { motion,  } from "framer-motion";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
-export default function Benefits()
-{
-    return(
-  <section className="py-24 bg-slate-50 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Is your child exhibiting any of these signs at home?</h2>
-            <p className="text-slate-500 max-w-2xl mx-auto">We provide a wide range of cleaning solutions to meet your specific needs.</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { title: "Deep Cleaning", desc: "Thorough cleaning of every corner, including appliances and windows." },
-              { title: "Recurring Service", desc: "Weekly or bi-weekly visits to keep your home consistently fresh." },
-              { title: "Move In / Out", desc: "Setting the stage for new beginnings with a spotless transition." }
-            ].map((service, i) => (
-              <motion.div 
-                key={i}
-                whileHover={{ y: -5 }}
-                className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100"
-              >
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-6">{service.desc}</p>
-                <a href="#" className="text-blue-600 font-bold text-sm inline-flex items-center gap-1 group">
-                  Learn More
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-3 h-3 group-hover:translate-x-1 transition-transform">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg>
-                </a>
-              </motion.div>
-            ))}
-          </div>
+export default function Benefits() {
+  return (
+    <section id="benefits" className="bg-white py-25 px-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-black tracking-widest mb-4 inline-block rounded-b-lg border-b-4 border-blue-500 p-2 text-slate-900">
+            Benefits of Chess For Kids
+          </h2>
+          <p className="text-slate-500 max-w-2xl mx-auto italic mt-4">
+            If so, bring them to Chess For Kids.
+          </p>
         </div>
-      </section>
-    );
+
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+          {[
+            { 
+              title: "Better focus and attention", 
+              imgSrc: "/images/brainstorm.webp",
+              bgColor: "bg-red-50",
+              borderColor: "border-red-500"
+            },
+            { 
+              title: "Enhanced problem-solving skills", 
+              imgSrc: "/images/problem-solving-skills.webp",
+              bgColor: "bg-green-50",
+              borderColor: "border-green-500" 
+            },
+            { 
+              title: "Strategic Thinking", 
+              imgSrc: "/images/idea-bulb.webp",
+              bgColor: "bg-purple-50",
+              borderColor: "border-purple-500" 
+            },
+            { 
+              title: "Improved cognitive abilities", 
+              imgSrc: "/images/idea-bulb.webp",
+              bgColor: "bg-purple-50",
+              borderColor: "border-purple-500" 
+            },
+            { 
+              title: "Better decision-making skills", 
+              imgSrc: "/images/idea-bulb.webp",
+              bgColor: "bg-purple-50",
+              borderColor: "border-purple-500" 
+            },
+            { 
+              title: "Increased creativity", 
+              imgSrc: "/images/idea-bulb.webp",
+              bgColor: "bg-purple-50",
+              borderColor: "border-purple-500" 
+            },
+            { 
+              title: "Improved planning and organization skills", 
+              imgSrc: "/images/idea-bulb.webp",
+              bgColor: "bg-purple-50",
+              borderColor: "border-purple-500" 
+            },
+            { 
+              title: "Boosted self-confidence and self-esteem", 
+              imgSrc: "/images/idea-bulb.webp",
+              bgColor: "bg-purple-50",
+              borderColor: "border-purple-500" 
+            },
+            { 
+              title: "Enhanced patience and perseverance", 
+              imgSrc: "/images/idea-bulb.webp",
+              bgColor: "bg-purple-50",
+              borderColor: "border-purple-500" 
+            }
+          ].map((service, i) => (
+            <motion.div 
+              key={i}
+              whileHover={{ y: -5 }}
+ 
+              className={`relative ${service.bgColor} ${service.borderColor} rounded-3xl overflow-hidden min-h-50 flex flex-col items-center justify-center border-b-8 p-6`}
+            >
+              <div className="relative z-10 text-center flex flex-col items-center">
+                <div className="relative mb-4 w-16 h-16 opacity-90 flex items-center justify-center">
+                  <Image 
+                    src={service.imgSrc} 
+                    alt={service.title}
+                    fill
+                    className="object-contain"
+                    priority={i === 0} 
+                  />
+                </div>
+                <h3 className="text-lg md:text-xl font-bold text-slate-900 leading-tight">
+                  {service.title}
+                </h3>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

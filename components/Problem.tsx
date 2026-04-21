@@ -26,7 +26,7 @@ export default function Problem() {
       bgColor: "bg-red-0",
       borderColor: "border-red-100",
       imageSrc: "/images/1.webp",
-      alt: "Child using phone addicted"
+      alt: "Child using phone addicted",
     },
     { 
       title: "Lack of focus on tasks?", 
@@ -49,7 +49,7 @@ export default function Problem() {
           <p className="text-slate-500 font-medium italic">If so, chess might be the solution they need.</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-4 gap-5 ">
           {signs.map((sign, i) => (
             <motion.div 
               key={i}
@@ -58,7 +58,7 @@ export default function Problem() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: i * 0.2 }}
               whileHover={{ scale: 1.03, y: -5 }}
-              className={` p-8  relative overflow-hidden flex flex-col items-start min-h-50 `}
+              className={` p-5  relative overflow-hidden flex flex-col items-start min-h-50 border-l-8 rounded-b-4xl shadow-lg border-red-500  shadow-red-300`}
             >
                 <div className="flex-1 pr-20 z-10">
                 <h3 className="text-lg md:text-xl font-black text-slate-800 leading-tight">

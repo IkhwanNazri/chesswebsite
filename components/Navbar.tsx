@@ -9,7 +9,7 @@ export default function Navbar()
           animate={{ opacity: 1 }}
           className="text-xl font-bold tracking-tight text-blue-600"
         >
-          Pure<span className="text-slate-900">Space</span>
+          Chess<span className="text-slate-900">ForKids</span>
         </motion.div>
         
         <div className="hidden md:flex gap-8 text-sm font-medium text-slate-500">
@@ -23,7 +23,7 @@ export default function Navbar()
           whileTap={{ scale: 0.98 }}
           className="bg-blue-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold shadow-md shadow-blue-100"
         >
-          Try Now
+          Register Now
         </motion.button>
       </nav>
     );
