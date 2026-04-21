@@ -11,9 +11,9 @@ export default function Registration() {
         <div className="relative border-4 border-slate-900 rounded-4xl p-8 md:p-16 bg-white shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] overflow-hidden">
           
           {/* Accent Decorative Element - Nampak macam tab folder */}
-          <div className="absolute top-10 left-12 -translate-y-1/2 bg-blue-600 text-white px-6 py-2 rounded-lg font-black text-sm uppercase tracking-[0.2em]">
+          {/* <div className="absolute top-10 left-12 -translate-y-1/2 bg-blue-600 text-white px-6 py-2 rounded-lg font-black text-sm uppercase tracking-[0.2em]">
             Join the Academy
-          </div>
+          </div> */}
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             
