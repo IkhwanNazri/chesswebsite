@@ -58,7 +58,7 @@ export default function Problem() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: i * 0.2 }}
               whileHover={{ scale: 1.03, y: -5 }}
-              className={` p-5  relative overflow-hidden flex flex-col items-start min-h-50 border-l-8 rounded-b-4xl shadow-lg border-red-500  shadow-red-300`}
+              className={` p-5  relative overflow-hidden flex flex-col items-start min-h-50 border-b-8 rounded-b-4xl shadow-lg border-red-500  shadow-red-300`}
             >
                 <div className="flex-1 pr-20 z-10">
                 <h3 className="text-lg md:text-xl font-black text-slate-800 leading-tight">

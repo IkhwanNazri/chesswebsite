@@ -20,54 +20,49 @@ export default function Benefits() {
             { 
               title: "Better focus and attention", 
               imgSrc: "/images/brainstorm.webp",
-              bgColor: "bg-red-50",
-              borderColor: "border-red-500"
+            
             },
             { 
               title: "Enhanced problem-solving skills", 
               imgSrc: "/images/problem-solving-skills.webp",
-              bgColor: "bg-green-50",
-              borderColor: "border-green-500" 
+              
             },
             { 
               title: "Strategic Thinking", 
               imgSrc: "/images/idea-bulb.webp",
-              bgColor: "bg-purple-50",
-              borderColor: "border-purple-500" 
+          
             },
             { 
               title: "Improved cognitive abilities", 
-              imgSrc: "/images/idea-bulb.webp",
-              bgColor: "bg-purple-50",
-              borderColor: "border-purple-500" 
+              imgSrc: "/images/cognitive.webp",
+         
             },
             { 
               title: "Better decision-making skills", 
-              imgSrc: "/images/idea-bulb.webp",
-              bgColor: "bg-purple-50",
-              borderColor: "border-purple-500" 
+              imgSrc: "/images/problem-solving-skills.webp",
+           
             },
             { 
               title: "Increased creativity", 
-              imgSrc: "/images/idea-bulb.webp",
+              imgSrc: "/images/brain.webp",
               bgColor: "bg-purple-50",
               borderColor: "border-purple-500" 
             },
             { 
               title: "Improved planning and organization skills", 
-              imgSrc: "/images/idea-bulb.webp",
+              imgSrc: "/images/organizational.webp",
               bgColor: "bg-purple-50",
               borderColor: "border-purple-500" 
             },
             { 
               title: "Boosted self-confidence and self-esteem", 
-              imgSrc: "/images/idea-bulb.webp",
+              imgSrc: "/images/self-confident.webp",
               bgColor: "bg-purple-50",
               borderColor: "border-purple-500" 
             },
             { 
               title: "Enhanced patience and perseverance", 
-              imgSrc: "/images/idea-bulb.webp",
+              imgSrc: "/images/challenges.webp",
               bgColor: "bg-purple-50",
               borderColor: "border-purple-500" 
             }
@@ -76,7 +71,7 @@ export default function Benefits() {
               key={i}
               whileHover={{ y: -5 }}
  
-              className={`relative ${service.bgColor} ${service.borderColor} rounded-3xl overflow-hidden min-h-50 flex flex-col items-center justify-center border-b-8 p-6`}
+              className={`relative  rounded-3xl overflow-hidden min-h-50 flex flex-col items-center justify-center  p-6`}
             >
               <div className="relative z-10 text-center flex flex-col items-center">
                 <div className="relative mb-4 w-16 h-16 opacity-90 flex items-center justify-center">
